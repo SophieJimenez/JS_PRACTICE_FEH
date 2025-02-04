@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JAVASCRIPT FEH</title>
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+
+	<div>
+		<details ontoggle = "message()">
+			<summary>Instruction</summary>
+			<i>Enter two numbers then find its answer.</i>
+		</details>
+		
+	</div>
+	<br> 
+
+
+	<form>
+		<label>Enter the 1st number:</label>
+		<input type = "number" id= "num1" placeholder="Type here...."> 
+		<br>
+
+        <label>Enter the 2nd number:</label>
+		<input type = "number" id= "num2" placeholder="Type here...."> 
+		<br> <br>
+
+		<button type= "submit" onmouseover= "plus()">PLUS</button>
+		<button type= "submit" onmouseover= "minus ()">MINUS</button> 
+		<br>
+
+		<span><h1 id= "result">ANSWER</h1></span> 
+		<br>
+
+		
+	
+
+	
+	</form>
+
+
+
+
+	<script>
+			function message () {
+				window.alert ('Try it'); 
+			}
+
+			function plus () {
+				var add1 = document.getElementById('num1').value; 
+				var add2 = document.getElementById('num2').value;
+				var sum = Number (add1) + Number (add2); 
+
+				document.getElementById('result').innerHTML= 'Answer is' + ' ' + sum; 
+			}
+
+
+
+			function minus () {
+			var diff1 = document.getElementById('num1').value;
+			var diff2 = document.getElementById('num2').value; 
+			var difference = Number (diff1) - Number (diff2);
+
+			 document.getElementById('result').innerHTML= 'Answer is' + ' ' + difference; 
+
+
+
+			 } 
+
+    </script>
+
+</body>
+</html>
